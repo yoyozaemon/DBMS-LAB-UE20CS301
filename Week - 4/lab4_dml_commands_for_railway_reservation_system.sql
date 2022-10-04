@@ -52,7 +52,6 @@ GRANT select,delete,update on ticket to 'user7'@'localhost';
 show grants for 'user7'@'localhost'; 
 
 --3)Create different save points and perform some insert/update/delete operations. Observe the effect of commit & rollback operations.
-
 savepoint sp1;
 delete from payment_info where Bank='Union Bank';
 savepoint sp2;
